@@ -30,7 +30,8 @@
     "harness": "mocha-qunit"
   },
   "devDependencies": {
-    "es5-shim": "2.0.5"
+    "es5-shim": "2.0.5",
+      "mocha": "1.8.1"
   },
   "keywords": [
       "property",
