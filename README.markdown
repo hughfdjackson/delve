@@ -1,9 +1,7 @@
 # delve
-
 Delve recursively into a value to retrieve a property; without erroring.
 
 ## Why
-
 It sucks to have to do `if ( obj && obj.prop && obj.prop.secondProp ) { ... }`.
 
 ## Example
@@ -27,15 +25,13 @@ delve('foo', 'length')        //= 3
 ```javascript
 var delve = require('delve')
 
-
 delve.has({ x: { y: undefined } }, 'x.y') //= true
 delve.has('foo', 'length')                //= true
 delve.has(null, 'foo')                    //= false
-delve.has({ x: { } }, 'x.y'               //= false
-
+delve.has({ x: { } }, 'x.y')              //= false
 ```
 
-For more examples, see the tests/delve-test.js
+For more examples, see tests/delve-test.js.
 
 ## Install
 
