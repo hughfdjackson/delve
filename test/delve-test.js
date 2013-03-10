@@ -28,11 +28,22 @@ test('missing prop', function(){
     a.equal(delve(o, 'x.y.z'), undefined)
 })
 
+test('empty string', function(){
+    var o = { x: { y: { x: 3 } } }
+    a.equal(delve(o, ''), undefined)
+})
+
 test('return is object', function(){
     var inner = { x: 3 }
     var o = { x: { y: inner } }
 
     a.equal(delve(o, 'x.y'), inner)
+})
+
+test('delve into an array', function(){
+    var o = [1, { x: [{ y: [{ z: 3 }] }] }]
+
+    a.equal(delve(o, '1.x.0.y.0.z'), 3)
 })
 
 test('primitive value part way through', function(){
