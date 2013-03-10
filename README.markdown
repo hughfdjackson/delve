@@ -13,11 +13,12 @@ var delve = require('delve')
 
 var o = { x: { y: { z: 'my val' } } }
 
-delve(o, 'x.y') //= { z: 'my val' }
-delve(o, 'x.y.z') //= 'my val'
-delve(o, 'x.y.z.foo') //= undefined
+delve(o, 'x.y')               //= { z: 'my val' }
+delve(o, 'x.y.z')             //= 'my val'
+delve(o, 'x.y.z.foo')         //= undefined
 delve(undefined, 'x.y.z.foo') //= undefined
-delve('foo', 'length') //= 3
+delve(null, 'x.y.z.foo')      //= undefined
+delve('foo', 'length')        //= 3
 ```
 
 For more examples, see the tests/delve-test.js
