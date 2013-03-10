@@ -32,7 +32,12 @@
   "devDependencies": {
     "es5-shim": "2.0.5"
   },
-  "keywords": ["property", "accessor", "utility", "sugar"],
+  "keywords": [
+      "property",
+      "accessor",
+      "utility",
+      "sugar"
+  ],
   "author": "hughfdjackson",
   "license": "BSD"
 }
