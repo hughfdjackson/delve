@@ -1,0 +1,16 @@
+{
+  "name": "delve",
+  "version": "0.1.0",
+  "main": "src/delve.js",
+  "scripts": {
+    "test": "mocha --ui qunit",
+    "prepublish": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hughfdjackson/delve.git"
+  },
+  "keywords": [],
+  "author": "hughfdjackson",
+  "license": "BSD"
+}
