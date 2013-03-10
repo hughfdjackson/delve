@@ -1,6 +1,10 @@
 var a = require('assert')
 var delve = require('..')
 
+// to test older browsers with es5-shimmed functionality
+require('es5-shim')
+
+
 suite('delve')
 
 test('present property', function(){
