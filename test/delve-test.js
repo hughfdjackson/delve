@@ -60,5 +60,15 @@ test('primitive value part way through', function(){
 
     cases.forEach(function(o){
         a.equal(delve(o, 'x.y.z'), undefined)
-    });
+        a.equal(delve.has(o, 'x.y.z'), false)
+    })
+})
+
+test('delve.has on undefined as a value', function(){
+    var o = { x: { y: { z: undefined } } }
+    a.equal(delve.has(o, 'x.y.z'), true)
+})
+
+test('delve.has on a string', function(){
+    a.equal(delve.has('foo', 'length'), true)
 })
