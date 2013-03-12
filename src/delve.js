@@ -22,9 +22,8 @@ void function(root){
         else                      return false
     }
 
-    if ( delve(module, 'exports') )
-        module.exports = delve
-    else
-        root.delve = delve
+    if ( typeof module !== 'undefined' && delve(module, 'exports') ) module.exports = delve
+    else if ( typeof define === 'function' && delve(define, 'amd') ) define(function(){ return delve })
+    else                                                             root.delve = delve
 
 }(this)
