@@ -44,3 +44,13 @@ npm install delve
 ### browser
 
 Download src/delve.js, and include it as a script tag.
+
+### AMD/require.js
+
+Download src/delve.js, and require it in:
+
+```javascript
+require(['libs/delve'], function(delve){
+  // ... assuming delve is in libs/delve, now it's ready to use
+})
+```
