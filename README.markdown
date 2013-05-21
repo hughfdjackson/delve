@@ -1,6 +1,8 @@
 # delve
 Delve recursively into a value to retrieve a property; without erroring.
 
+[![browser support](https://ci.testling.com/hughfdjackson/delve.png)](http://ci.testling.com/hughfdjackson/delve)
+
 ## Why
 It sucks to have to do `if ( obj && obj.prop && obj.prop.secondProp ) { ... }`.
 
