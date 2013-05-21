@@ -1,6 +1,6 @@
 {
   "name": "delve",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "main": "src/delve.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --ui qunit",
@@ -34,10 +34,10 @@
     "mocha": "1.8.1"
   },
   "keywords": [
-      "property",
-      "accessor",
-      "utility",
-      "sugar"
+    "property",
+    "accessor",
+    "utility",
+    "sugar"
   ],
   "author": "hughfdjackson",
   "license": "BSD"
