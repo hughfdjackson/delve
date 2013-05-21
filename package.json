@@ -3,7 +3,7 @@
   "version": "0.2.2",
   "main": "src/delve.js",
   "scripts": {
-    "test": "mocha --ui qunit",
+    "test": "./node_modules/mocha/bin/mocha --ui qunit",
     "prepublish": "npm test"
   },
   "repository": {
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "es5-shim": "2.0.5",
-      "mocha": "1.8.1"
+    "mocha": "1.8.1"
   },
   "keywords": [
       "property",

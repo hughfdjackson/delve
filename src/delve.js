@@ -8,7 +8,15 @@ void function(root){
     }
 
     var delve = function(o, path){
-        return path.split('.').reduce(unpackOne, o)
+        var parts = path.split('.')
+        var result = o
+
+        while ( parts.length ) {
+            part = parts.shift()
+            result = unpackOne(result, part)
+        }
+
+        return result
     }
 
     delve.has = function(o, path){
