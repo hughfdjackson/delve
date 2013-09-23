@@ -1,5 +1,7 @@
 void function(root){
 
+    'use strict'
+
     var isObject = function(v){ return v !== null && typeof v === 'object' }
 
     var unpackOne = function(o, path){
@@ -10,6 +12,7 @@ void function(root){
     var delve = function(o, path){
         var parts = path.split('.')
         var result = o
+        var part
 
         while ( parts.length ) {
             part = parts.shift()
