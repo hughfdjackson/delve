@@ -35,11 +35,6 @@ delve.has({ x: { } }, 'x.y')              //= false
 
 For more examples, see tests/delve-test.js.
 
-
-## Note for Lodash Users 
-
-For any of you using the fantastic [lodash](https://lodash.com/) library, you can find similar functionality to delve with the [get](https://lodash.com/docs#get) function. 
-
 ## Install
 
 ### npm
@@ -61,4 +56,8 @@ require(['libs/delve'], function(delve){
   // ... assuming delve is in libs/delve, now it's ready to use
 })
 ```
+
+## Note for Lodash Users 
+
+For any of you using the fantastic [lodash](https://lodash.com/) library, you can find similar functionality to delve with the [get](https://lodash.com/docs#get) function. 
 
