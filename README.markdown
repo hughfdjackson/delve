@@ -57,6 +57,7 @@ require(['libs/delve'], function(delve){
 })
 ```
 
-### Lodash Users 
+## Note for Lodash Users 
 
 For any of you using the fantastic [lodash](https://lodash.com/) library, you can find similar functionality to delve with the [get](https://lodash.com/docs#get) function. 
+
